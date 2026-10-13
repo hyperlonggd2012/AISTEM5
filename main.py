@@ -7,7 +7,7 @@ import google.generativeai as genai
 app = FastAPI()
 
 # Cấu hình khóa API Google Gemini của bạn
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "DÁN_API_KEY_CỦA_BẠN_VÀO_ĐÂY")
+GEMINI_API_KEY = os.environ.get("gen-lang-client-0109389627")
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
